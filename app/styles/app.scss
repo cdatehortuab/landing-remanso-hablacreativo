@@ -1,6 +1,10 @@
-@import "_colors";
-@import "_variables";
-@import "font-faces";
-@import "styles";
+@import "./font-faces";
+@import "./styles";
 
-@import "components/main-header";
+@import "./components/input-group";
+@import "./components/main-header";
+@import "./components/subscribe-form";
+
+.subscribe-form-container {
+  padding: 1em;
+}

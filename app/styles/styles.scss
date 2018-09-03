@@ -1,5 +1,9 @@
-@import "_variables";
-@import "_colors";
+@import "./variables";
+@import "./colors";
+
+body {
+  font-family: $PTSans;
+}
 
 a[href] {
   font-family: $PTSans;
@@ -29,5 +33,28 @@ button {
   &:hover {
     background-color: $darken-dark-brown;
     color: $darken-white;
+    cursor: pointer;
+  }
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week "],
+textarea {
+  border-style: none;
+  border-radius: 0.2em;
+  padding: 0.3em 0.5em;
+  &::placeholder {
+    font-size: 0.8em;
   }
 }

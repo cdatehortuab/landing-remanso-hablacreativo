@@ -1,0 +1,10 @@
+<div class="input-group">
+  <label for="{{idInput}}" class="label">{{label}}</label>
+  {{#if (eq type "textarea")}}
+    {{textarea id=idInput type=type value=value placeholder=label rows=rows}}
+  {{else}}
+    {{input id=idInput type=type value=value placeholder=label}}
+  {{/if}}
+</div>
+
+{{yield}}

@@ -1,0 +1,30 @@
+@import "../colors";
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .bonus-info {
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    width: calc(100% - 3em);
+    background-color: $brown;
+    border-radius: 0 0 2.5em 0;
+    text-align: center;
+    padding: 0.5em 1.5em 1em;
+
+    .info {
+      color: $dark-brown;
+      font-size: 1em;
+    }
+
+    .warning {
+      color: $white;
+      font-size: 0.8em;
+    }
+  }
+}
