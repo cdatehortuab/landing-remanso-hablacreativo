@@ -1,0 +1,13 @@
+<img class="logo" src="assets/recortes/Remanso-05.png" alt="Logo Remanso del Rodeo">
+<button class="toggle-button" {{action 'toggleLinks'}}>
+  <span class="icon-menu-{{if displayingLinks 'hide' 'display'}}" />
+</button>
+<nav class="links {{if displayingLinks 'visible'}}">
+  <a href="#proyecto" class="link">Proyecto</a>
+  <a href="#galeria" class="link">Galería</a>
+  <a href="#apartamentos" class="link">Apartamentos</a>
+  <a href="#mapa" class="link">Mapa</a>
+  <a href="#contacto" class="link">Contacto</a>
+</nav>
+
+{{yield}}

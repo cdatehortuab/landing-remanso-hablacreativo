@@ -1,0 +1,33 @@
+@import "_variables";
+@import "_colors";
+
+a[href] {
+  font-family: $PTSans;
+  font-weight: bold;
+  font-stretch: condensed;
+  color: $white;
+  text-decoration: none;
+
+  &:hover {
+    color: $darken-white;
+    font-weight: bolder;
+  }
+}
+
+button {
+  font-family: $PTSans;
+  font-weight: bold;
+  font-stretch: condensed;
+  color: $white;
+  background-color: $dark-brown;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 0.3em;
+  padding: 0.5em 0.8em;
+  margin: auto;
+
+  &:hover {
+    background-color: $darken-dark-brown;
+    color: $darken-white;
+  }
+}

@@ -1,0 +1,35 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-brown;
+  width: 100%;
+  font-family: $PTSans, sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+
+  .toggle-button {
+    margin: auto 0.05em auto auto;
+    font-size: 0.8em;
+  }
+
+  .links {
+    visibility: collapse;
+    height: 0;
+
+    &.visible {
+      visibility: visible;
+      height: inherit;
+    }
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.2em
+  }
+
+  .link {
+    display: block;
+    padding: 0.5em;
+  }
+}

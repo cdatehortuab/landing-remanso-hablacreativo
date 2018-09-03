@@ -21,6 +21,19 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import("node_modules/normalize.css/normalize.css");
+  app.import("vendor/IconsLandingRemanso/style.css");
+  app.import("vendor/IconsLandingRemanso/fonts/IconsLandingRemanso.eot", {
+    destDir: "assets/fonts",
+  });
+  app.import("vendor/IconsLandingRemanso/fonts/IconsLandingRemanso.svg", {
+    destDir: "assets/fonts",
+  });
+  app.import("vendor/IconsLandingRemanso/fonts/IconsLandingRemanso.ttf", {
+    destDir: "assets/fonts",
+  });
+  app.import("vendor/IconsLandingRemanso/fonts/IconsLandingRemanso.woff", {
+    destDir: "assets/fonts",
+  });
 
   return app.toTree();
 };
