@@ -3,6 +3,7 @@
 
 body {
   font-family: $PTSans;
+  color: $light-black
 }
 
 a[href] {
@@ -77,7 +78,8 @@ ul {
 }
 
 .text {
-  color: $dark-gray;
+  color: $light-black;
+  font-stretch: condensed;
 }
 
 .list-title {
