@@ -5,6 +5,16 @@
 @import "./components/main-header";
 @import "./components/subscribe-form";
 
-.subscribe-form-container {
+#subscribirse {
   padding: 1em;
+}
+
+#proyecto {
+  padding: 1em;
+  .project-image {
+    display: none;
+  }
+  .places {
+    font-style: italic;
+  }
 }
