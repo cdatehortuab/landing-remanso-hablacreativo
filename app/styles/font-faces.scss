@@ -1,0 +1,53 @@
+@import "_variables";
+@import "_mixins";
+
+$fonts-folder: "/assets/fuentes/";
+
+$bebas-neue-variants: (
+  -Bold: bold,
+  -Book: 300,
+  -Light: 200,
+  -Regular: null,
+  -Thin: 100,
+);
+
+$pt-sans-variants: (
+  -Bold: (bold null null),
+  -BoldItalic: (bold italic null),
+  -Caption: (null null expanded),
+  -CaptionBold: (bold null expanded),
+  -Italic: (null italic null),
+  -Narrow: (null null condensed),
+  -NarrowBold: (bold null condensed),
+  -Regular: (null null null)
+);
+
+@function get-base-url($font-name) {
+  @return $fonts-folder + $font-name + "/" + $font-name;
+}
+
+@each $variant, $weight in $bebas-neue-variants {
+  @include font-face(
+    $BebasNeue,
+    get-base-url($BebasNeue),
+    otf,
+    $variant,
+    $weight
+  );
+}
+
+@each $variant, $options in $pt-sans-variants {
+  $weight: nth($options, 1);
+  $style: nth($options, 2);
+  $stretch: nth($options, 3);
+
+  @include font-face(
+    $PTSans,
+    get-base-url($PTSans),
+    ttf,
+    $variant,
+    $weight,
+    $style,
+    $stretch
+  );
+}
