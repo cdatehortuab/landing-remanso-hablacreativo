@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'landing-remanso-hablacreativo',
     environment,
-    rootURL: '/',
+    rootURL: environment === 'production' ? '/landing-remaso-hablacreativo': '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
