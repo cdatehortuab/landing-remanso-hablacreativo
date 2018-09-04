@@ -39,3 +39,25 @@
     }
   }
 }
+
+#apartamentos {
+  .subsidy {
+    margin-bottom: 3em;
+    width: 100%;
+  }
+
+  .apartments-description {
+    padding: 1em;
+    width: calc(100% - 2em);
+  }
+
+  .apartments-images {
+    padding: 2em;
+    text-align: center;
+
+    .apartment-image {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}
