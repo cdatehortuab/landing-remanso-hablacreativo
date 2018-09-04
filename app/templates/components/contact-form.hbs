@@ -1,0 +1,11 @@
+{{input-group idInput=(concat id "-name") type="text" label="Nombre *" value=name class="subscribe-input"}}
+{{input-group idInput=(concat id "-email") type="email" label="Correo electrónico *" value=email class="subscribe-input"}}
+{{input-group idInput=(concat id "-phone") type="tel" label="Teléfono *" value=phoneNumber class="subscribe-input"}}
+{{input-group idInput=(concat id "-city") type="text" label="Ciudad *" value=city class="subscribe-input"}}
+{{input-group idInput=(concat id "-comment") type="textarea" label="Comentario *" value=comment class="subscribe-input" rows=3}}
+<p class="warning">
+  Al hacer clic en enviar, estás aceptando los <strong>términos y condiciones</strong>
+</p>
+<button type="button" name="button">Enviar</button>
+
+{{yield}}

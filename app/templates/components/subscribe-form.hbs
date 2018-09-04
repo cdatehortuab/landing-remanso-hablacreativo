@@ -6,14 +6,6 @@
     <br>
     <strong>MANTENDREMOS INFORMADO!</strong>
   </p>
-  {{input-group idInput="subscribe-form-name" type="text" label="Nombre *" value=name class="subscribe-input"}}
-  {{input-group idInput="subscribe-form-email" type="email" label="Correo electrónico *" value=email class="subscribe-input"}}
-  {{input-group idInput="subscribe-form-phone" type="tel" label="Teléfono *" value=phoneNumber class="subscribe-input"}}
-  {{input-group idInput="subscribe-form-city" type="text" label="Ciudad *" value=city class="subscribe-input"}}
-  {{input-group idInput="subscribe-form-comment" type="textarea" label="Comentario *" value=comment class="subscribe-input" rows=3}}
-  <p class="warning">
-    Al hacer clic en enviar, estás aceptando los <strong>términos y condiciones</strong>
-  </p>
-  <button type="button" name="button">Enviar</button>
+  {{contact-form id="subscribe-form"}}
 </div>
 {{yield}}

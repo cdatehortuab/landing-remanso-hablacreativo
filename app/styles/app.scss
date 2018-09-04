@@ -5,6 +5,7 @@
 @import "./components/main-header";
 @import "./components/subscribe-form";
 @import "./components/photos-galery";
+@import "./components/contact-form";
 
 #subscribirse {
   padding: 1em;
@@ -24,11 +25,6 @@
   }
 
   .common-zones {
-    .subtitle {
-      text-align: center;
-      font-size: 1.2em;
-      font-style: italic;
-    }
 
     .common-zones-images {
       text-align: center;
@@ -59,5 +55,62 @@
       width: 100%;
       margin-bottom: 1em;
     }
+  }
+}
+
+#contacto {
+  background-image: url('/assets/recortes/Remanso-27.png');
+  padding: 2em;
+
+  .title {
+    background-color: $orange;
+  }
+
+  .subtitle {
+    color: $white;
+  }
+}
+
+#mapa {
+  background-color: $white-2;
+  padding: 2em;
+
+  .mapa {
+    width: 100%;
+  }
+}
+
+#grupo-profesional {
+  padding: 2em;
+  .professional-group {
+    width: 100%;
+    &:nth-child(1) {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+#sala-negocios {
+  background-image: url('/assets/recortes/Remanso-36.png');
+  padding: 2em;
+  text-align: center;
+
+  .title {
+    background-color: initial;
+  }
+  .info-bussiness-room {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 2em 0;
+
+    .img {
+      margin: 0 auto;
+    }
+  }
+
+  .powered {
+    margin-top: 2em;
   }
 }
