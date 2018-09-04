@@ -44,8 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/landing-remanso-hablacreativo';
-    ENV.locationType = 'hash';
+    ENV.rootURL = '/landing-remanso-hablacreativo/';
     // here you can enable a production-specific feature
   }
 
