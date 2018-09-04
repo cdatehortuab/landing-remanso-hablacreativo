@@ -9,14 +9,42 @@
 
 #subscribirse {
   padding: 1em;
+  display: flex;
+
+  @include for-size(tablet-portrait-up) {
+    background-image: url('/assets/recortes/Remanso-40.png');
+    background-size: 100%;
+    padding: 5em;
+  };
 }
 
 #proyecto {
-  padding: 1em;
   background-color: $white-2;
+  .upper {
+    height: auto;
+    display: flex;
+    .project-image {
+      display: none;
+      @include for-size(desktop-up) {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      };
+    }
 
-  .project-image {
-    display: none;
+    .project-content {
+      padding: 1em;
+      height: max-content;
+      @include for-size(desktop-up) {
+        padding: 1em 2em;
+        width: calc(50% - 4em);
+        display: inline-block;
+      };
+    }
   }
 
   .places {
@@ -37,23 +65,36 @@
 }
 
 #apartamentos {
+  text-align: center;
   .subsidy {
     margin-bottom: 3em;
-    width: 100%;
+    max-width: 100%;
   }
 
   .apartments-description {
     padding: 1em;
-    width: calc(100% - 2em);
+    max-width: calc(100% - 2em);
+    margin: auto;
+
+    &.tablet-landscape-up-img {
+      display: none;
+      @include for-size(tablet-landscape-up) {
+        display: inherit;
+      };
+    }
+    &:not(.tablet-landscape-up-img) {
+      @include for-size(tablet-landscape-up) {
+        display: none;
+      };
+    }
   }
 
   .apartments-images {
-    padding: 2em;
     text-align: center;
 
     .apartment-image {
-      width: 100%;
-      margin-bottom: 1em;
+      max-width: 100%;
+      margin: 1em auto;
     }
   }
 }
@@ -74,16 +115,18 @@
 #mapa {
   background-color: $white-2;
   padding: 2em;
+  text-align: center;
 
   .mapa {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
 #grupo-profesional {
   padding: 2em;
+  text-align: center;
   .professional-group {
-    width: 100%;
+    max-width: 100%;
     &:nth-child(1) {
       margin-bottom: 2em;
     }
@@ -99,8 +142,8 @@
     background-color: initial;
   }
   .info-bussiness-room {
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    display: inline-block;
     text-align: center;
     font-size: 1.2em;
     margin: 2em 0;
