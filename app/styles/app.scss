@@ -4,6 +4,7 @@
 @import "./components/input-group";
 @import "./components/main-header";
 @import "./components/subscribe-form";
+@import "./components/photos-galery";
 
 #subscribirse {
   padding: 1em;
@@ -12,21 +13,26 @@
 #proyecto {
   padding: 1em;
   background-color: $white-2;
+
   .project-image {
     display: none;
   }
+
   .places {
     font-style: italic;
     font-stretch: normal;
   }
+
   .common-zones {
     .subtitle {
       text-align: center;
       font-size: 1.2em;
       font-style: italic;
     }
+
     .common-zones-images {
       text-align: center;
+
       .common-zone {
         margin: 1em auto;
       }
