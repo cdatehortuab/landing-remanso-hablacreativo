@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'landing-remanso-hablacreativo',
     environment,
-    rootURL: environment === 'production' ? '/landing-remaso-hablacreativo': '/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -44,6 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.baseURL = '/landing-remanso-hablacreativo';
+    ENV.locationType = 'hash';
     // here you can enable a production-specific feature
   }
 

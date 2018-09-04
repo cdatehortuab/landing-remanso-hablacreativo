@@ -12,7 +12,7 @@
   display: flex;
 
   @include for-size(tablet-portrait-up) {
-    background-image: url('/assets/recortes/Remanso-40.png');
+    background-image: url('recortes/Remanso-40.png');
     background-size: 100%;
     padding: 5em;
   };
@@ -100,7 +100,7 @@
 }
 
 #contacto {
-  background-image: url('/assets/recortes/Remanso-27.png');
+  background-image: url('recortes/Remanso-27.png');
   padding: 2em;
 
   .title {
@@ -134,7 +134,7 @@
 }
 
 #sala-negocios {
-  background-image: url('/assets/recortes/Remanso-36.png');
+  background-image: url('recortes/Remanso-36.png');
   padding: 2em;
   text-align: center;
 
